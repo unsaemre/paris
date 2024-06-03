@@ -38,7 +38,12 @@
     align-items: center;
     overflow: hidden;
 }
-
+.main_slider .slide img {
+    filter: brightness(0.7);
+}
+.main_slider .slide img:hover {
+    filter: brightness(1);
+}
 /* section 1 */
 .section_01 {}
 .section_01 .title{
