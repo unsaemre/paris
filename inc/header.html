@@ -35,9 +35,8 @@
             <li><a href="#" class="on yellow">파바의 약속</a></li>
             <li><a href="#">파바 매거진</a></li>
             <li><a href="#">파바 스토리</a></li>
-            <li>
-                <a href="#" id="sub">상품 안내</a>
-                <div class="sub_wrap">
+            <li id="sub">
+                <a href="#">상품 안내</a>
                     <div class="sub">
                         <ul>
                             <li><a href="#">전체</a></li>
@@ -55,7 +54,6 @@
                         <div class="photo">
                             <img src="../images/header/sub.png" alt="">
                         </div>
-                    </div>
                 </div>
             </li>
             
@@ -64,7 +62,7 @@
 
         
         <div class="logo">
-            <a href="#"><h2>PARIS BAGUETTE</h2></a>
+            <a href="../page/main.html"><h2>PARIS BAGUETTE</h2></a>
         </div>
         
         <div class="side_menu">
@@ -79,22 +77,36 @@
 </div>
 
 <script>
-    $('#search').on('click', function(){
-    $('.search').slideDown(100, 'linear', function(){})
-    })
-    $('i').on('click', function(){
-        $('.search').slideUp(100, 'linear', function(){})
-    })
-    
-</script>
+// Search
+    var search = $('.search')
 
-<script>
-    $('#sub').mouseenter(function(){
-        $('.sub_wrap').fadeIn('slow', 'linear')
+    $('#search').on('click', function(){
+        search.slideDown(100, 'linear', function(){})
+        })
+        $('i').on('click', function(){
+            search.slideUp(100, 'linear', function(){})
+        })
+
+    
+
+    var sub = $('#sub')
+    var item = $('.sub')
+
+    item.hide()
+    sub.mousemove(function(){
+        item.stop().slideDown(300)
     })
-    $('#sub').mouseleave(function(){
-        $('.sub').fadeOut()
+    sub.mouseleave(function(){
+        item.stop().slideUp(500)
     })
+
+
+    // $('#sub').mouseenter(function(){
+    //     $('.sub_wrap').fadeIn('slow', 'linear')
+    // })
+    // $('#sub').mouseleave(function(){
+    //     $('.sub').fadeOut()
+    // })
 </script>
 
 

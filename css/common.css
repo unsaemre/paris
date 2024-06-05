@@ -30,35 +30,7 @@
     font-size: 24px;
     cursor: pointer;
 }
-/* sub */
-.sub_wrap {
-    display: none;
-}
-.sub {
-    display: flex;
-    gap: 30px;
-    background-color: #fff;
-    padding: 20px;
-    width: 520px;
-    font-size: 14px;
-    color: #888;
-    z-index: 1;
-    position: absolute;
-    top: 60px;
-    left: 400px;
-}
-.sub ul{
-  
-}
-.sub li{
-    padding: 10px 0;
-}
-.sub li a:hover{
-    color: #023586;;
-}
-.sub .photo {
-    margin-left: 70px;
-}
+
 
 /* header */
 
@@ -75,15 +47,51 @@
     font-size: 22px;
     font-weight: 500;
 }
-
 .header .gnb{
     display: flex;
     gap: 12px;
 }
-
 .header .side_menu ul{
     display: flex;
     gap: 12px;
+}
+.header .gnb >li {
+    display: block;
+}
+.header .gnb > li:hover > a {
+    text-decoration: underline;
+    text-underline-offset: 23px;  
+    text-decoration-thickness: 2px;
+}
+.header .side_menu li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 23px;  
+    text-decoration-thickness: 2px;
+}
+
+/* sub */
+.sub {
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+    padding: 20px;
+    width: 520px;
+    font-size: 14px;
+    color: #888;
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.sub li{
+    padding: 10px 0;
+}
+.sub li a:hover{
+    color: #023586;;
+}
+.sub .photo {
+    margin-left: 70px;
 }
 
 /* footer */
@@ -94,38 +102,35 @@
 }
 .footer_top .item {
     width: 430px;
-    margin: 21px 0;
+    padding: 21px 0;
     position: relative;
-}
-.footer_top .item:nth-child(1) {
-    margin-left: 35px;
+    flex: 1;
 }
 .footer_top .item .title{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 0 14px;
 }
-.footer_top .item .text_box {
+.footer_top .item .text {
     display: flex;
+    padding: 0 14px;
+    line-height: 1.6;
+    cursor: pointer;
 }
-.footer_top .item .text_box p{
+.footer_top .item .text p{
     font-size: 14px;
     width: 334px;
     color: #515151;
 }
-.footer_top .item .text_box i{
+.footer_top .item .text i{
     font-size: 40px;
     color: #ccc;
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 20px;
     transform: translateY(-50%);
 }
-.footer_top .item:nth-child(2) {
-    padding: 0 30px;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-}
-.footer_top .item:nth-child(3) {
-    margin-left: 30px;
+.footer_top .item .text:hover {
+    text-decoration: underline;
 }
 
 /* footer */
@@ -238,6 +243,9 @@
 }
 .dock li:hover{
     filter: brightness(1.5);
+}
+.dock li:nth-child(2) {
+    filter: none;
 }
 .dock p {
     font-size: 10px;
