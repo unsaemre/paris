@@ -70,7 +70,7 @@
     text-decoration-style: double;
     text-decoration-thickness: 3px;
     border-top: 1px solid #ccc;
-    padding-top: 20px;
+    padding-top: 34px;
 }
 .section_01 .item_wrap {
     border: 1px solid #ccc;
@@ -104,3 +104,219 @@
     justify-content: center;
     color: #fff;
 }
+/* section_02 */
+.section_02 {
+    text-align: center;
+    margin-top: 134px;
+    margin-bottom: 80px;
+}
+.section_02 .item_wrap {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 1400px;
+    margin: 0 auto;
+}
+.section_02 h1{
+    font-size: 36px;
+    margin-bottom: 33px;
+}
+
+.section_02 .item_wrap img{
+    width: 1300px;
+    margin: 20px auto;
+}
+
+.section_02 .item_wrap h1 {
+    font-size: 36px;
+}
+.section_02 .item_wrap h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.section_02 .item_wrap h3 {
+    padding: 20px 0 30px;
+    color: #333;
+    font-size: 24px;
+}
+.section_02 .item_wrap ul {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.section_02 .item_wrap li {
+    color: #333;
+    font-size: 18px;
+}
+.section_02 .btn {
+    margin-top: 42px;
+    width: 147px;
+    height: 42px;
+    margin: 42px auto 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* .section_03 */
+.section_03 {
+    width: 1400px;
+    margin: 0 auto;
+}
+.section_03 .title {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+}
+.section_03 .tel {
+    text-align: center;
+    margin-bottom: 47px;
+}
+.section_03 .item_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    margin-bottom: 80px;
+}
+.section_03 .item_wrap .photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section_03 .item_wrap img{
+    width: 600px;
+}
+.section_03 .item_wrap h1 {
+    text-align: center;
+    font-size: 28px;
+    padding: 60px 0 20px;
+}
+.section_03 .item_wrap .use{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 690px;
+}
+.section_03 .item_wrap .use ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px 0 33px;
+    width: 600px;
+    margin: 0 auto;
+}
+.section_03 .item_wrap h1 {
+    text-align: center;
+    font-size: 28px;
+    padding: 60px 0 20px;
+}
+.section_03 .item_wrap .order{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 690px;
+}
+.section_03 .item_wrap .order ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px 0 33px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* section 4 */
+.section_04 h1{
+    text-decoration: underline;
+    text-decoration-color: #FFD500;
+    text-underline-offset: 10px;
+    text-decoration-style: double;
+    text-decoration-thickness: 3px;
+}
+.section_04 .title{
+    margin-bottom: 80px;
+}
+.section_04 .photo{
+    width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+/* section 5 */
+.section_05 {
+    background-color: #F5F7F9;
+}
+.section_05 .title {
+    padding-top: 70px;
+    margin-bottom: 40px;
+}
+.section_05 .wrap {
+    width: 1400px;
+    margin: 0 auto;
+}
+.section_05 .photo_wrap .photo{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+}
+.section_05 .photo_wrap .photo p{
+    padding: 14px 0;
+}
+.section_05 .order_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 1113px;
+    margin: 0 auto;
+    margin-top: 72px;
+}
+.section_05 .order_wrap .delivery {
+    display: flex;
+    gap: 50px;
+}
+.section_05 .order_wrap .delivery h3{
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.section_05 .order_wrap .delivery p{
+    font-size: 18px;
+    width: 287px;
+}
+.section_05 .order_wrap .pickup {
+    display: flex;
+    gap: 50px;
+}
+.section_05 .order_wrap .pickup h3{
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+.section_05 .order_wrap .pickup p{
+    font-size: 18px;
+    width: 287px;
+}
+.section_05 .box_wrap {
+    width: 1113px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.section_05 .box_wrap ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 21px;
+}
+.section_05 .box_wrap li {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E9EDEF;
+    border: 1px solid #062F78;
+    border-radius: 5px;
+    flex: 1;
+    height: 92px;
+}
+

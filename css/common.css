@@ -58,15 +58,20 @@
 .header .gnb >li {
     display: block;
 }
+.header .gnb >li > a{
+    padding-bottom: 18px;
+}
+.header .gnb > li:first-child:hover > a {
+    border-bottom: 3px solid #FFE600;
+}
 .header .gnb > li:hover > a {
-    text-decoration: underline;
-    text-underline-offset: 23px;  
-    text-decoration-thickness: 2px;
+    border-bottom: 3px solid #fff;
+}
+.header .side_menu li > a {
+    padding-bottom: 18px;
 }
 .header .side_menu li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 23px;  
-    text-decoration-thickness: 2px;
+    border-bottom: 3px solid #fff;
 }
 
 /* sub */

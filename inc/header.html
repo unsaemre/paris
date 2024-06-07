@@ -94,10 +94,10 @@
 
     item.hide()
     sub.mousemove(function(){
-        item.stop().slideDown(300)
+        sub.find(item).stop().slideDown('fast')
     })
     sub.mouseleave(function(){
-        item.stop().slideUp(500)
+        sub.find(item).stop().slideUp('fast')
     })
 
 
