@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -19,13 +21,14 @@
     <div class="container">
 
         <!-- main slide -->
-        <div class="main_slider">
-            <div class="slide">
-                <a href="#"><img src="../images/main/main_slider_01.png" alt=""></a>
-                <a href="#"><img src="../images/main/main_slider_02.png" alt=""></a>
-                <a href="#"><img src="../images/main/main_slider_03.png" alt=""></a>
-                <a href="#"><img src="../images/main/main_slider_04.png" alt=""></a>
-                <a href="#"><img src="../images/main/main_slider_05.png" alt=""></a>
+        <div class="main_slider swiper">
+            <div class="slide swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="../images/main/main_slider_01.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/main/main_slider_02.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/main/main_slider_03.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/main/main_slider_04.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/main/main_slider_05.png" alt=""></a></div>
+                <div class="swiper-slide"><a href="#"><img src="../images/main/main_slider_06.png" alt=""></a></div>
             </div>
         </div>
 
@@ -246,6 +249,17 @@
             $(".header_container").load("../inc/header.html")
             $(".footer_container").load("../inc/footer.html")
         })
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+        
+            });
     </script>
 
 

@@ -118,6 +118,7 @@
 }
 .section_01 .title img{
     margin-right: auto;
+    width: 40px;
 }
 .section_01 > h4 {
     padding: 20px 0 28px 0;
@@ -135,6 +136,10 @@
     font-size: 24px;
     color: #444;
     overflow: hidden;
+    position: relative;
+}
+.section_01 .info {
+    z-index: 1;
 }
 .section_01 .item .box span{
     margin-left: 8px;
@@ -145,15 +150,35 @@
 }
 .section_01 .item li img{
     margin-right: 157px;
+    z-index: 1;
 }
 .section_01 h5 {
     padding: 30px 0 34px 0;
     text-align: end;
 }
-.section_01 button {
+.section_01 .btn {
     width: 100%;
     height: 80px;
+    line-height: 80px;
     font-size: 24px;
+    text-align: center;
+    background-color: #EBEBEB;
+    border: 1px solid #333;
+}
+.section_01 .graph {
+    background-color: #BFD0F1;
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px 0 0 15px;
+}
+.section_01 .graph1, .section_01 .graph3 {
+    width: 420px;
+}
+.section_01 .graph4, .section_01 .graph5 {
+    width: 280px;
 }
 
 /* section 2 */

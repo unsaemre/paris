@@ -8,11 +8,16 @@
     margin-top: -1px;
 }
 .main_slider .slide{
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+
 }
-.main_slider .slide img {
+.main_slider .swiper {
+}
+.main_slider .swiper-wrapper {
+}
+.main_slider .swiper-slide {
+    width: 467px;
+}
+.main_slider .swiper-slide img {
     filter: brightness(0.7);
 }
 .main_slider .slide img:hover {
@@ -138,6 +143,7 @@
 }
 .section_03 .item_wrap .photo {
     margin-right: 20px;
+    cursor: pointer;
 }
 .section_03 .item_wrap .text_box {
     width: 256px;
@@ -159,7 +165,7 @@
     line-height: 1.4;
     font-size: 14px;
     width: 223px;
-    height: 56px;
+    height: 60px;
     text-overflow: ellipsis;
     overflow: hidden;
     display: -webkit-box;

@@ -17,7 +17,7 @@
     padding: 10px 0;
 }
 .search input {
-    padding: 6px 30px ;
+    padding: 6px 160px ;
     border: none;
     font-size: 24px;
     width: 100%;
@@ -26,7 +26,7 @@
     outline: none;
 }
 .search i{
-    padding-right: 30px;
+    padding-right: 150px;
     font-size: 24px;
     cursor: pointer;
 }
@@ -83,7 +83,7 @@
     width: 520px;
     font-size: 14px;
     color: #888;
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     top: 60px;
     left: 400px;
@@ -114,6 +114,7 @@
 .footer_top .item .title{
     margin-bottom: 20px;
     padding: 0 14px;
+    text-align-last: left;
 }
 .footer_top .item .text {
     display: flex;
@@ -125,6 +126,7 @@
     font-size: 14px;
     width: 334px;
     color: #515151;
+    margin-bottom: 16px;
 }
 .footer_top .item .text i{
     font-size: 40px;
@@ -256,4 +258,7 @@
     font-size: 10px;
     text-align: center;
     color: #888;
+}
+.goTop {
+    cursor: pointer;
 }

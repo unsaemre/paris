@@ -60,14 +60,10 @@ a{
 .eng {
     font-family: "Lexend Exa", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
 }
 .kor {
   font-family: "Noto Sans KR", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 .footer {
     font-family: "Roboto Flex", sans-serif;

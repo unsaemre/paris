@@ -1,112 +1,91 @@
 <!-- header -->
 
 <div class="header_container">
-
-    <div class="search">
-            <div class="text_box">
-            <input type="text" placeholder="Search">
-            <i class="xi-close"></i>
-        </div>
+  <div class="search">
+    <div class="text_box">
+      <input type="text" placeholder="Search" />
+      <i class="xi-close"></i>
     </div>
+  </div>
 
-    <!-- <div class="sub_wrap">
+  <div class="header bg-blue">
+    <ul class="gnb">
+      <li><a href="#" class="on yellow">파바의 약속</a></li>
+      <li><a href="#">파바 매거진</a></li>
+      <li><a href="#">파바 스토리</a></li>
+      <li id="sub">
+        <a href="#">상품 안내</a>
         <div class="sub">
-            <ul>
-                <li><a href="#">전체</a></li>
-                <li><a href="#">브레드</a></li>
-                <li><a href="#">케이크</a></li>
-                <li><a href="#">샌드위치/샐러드</a></li>
-            </ul>
-            
-            <ul>
-                <li><a href="#">선물</a></li>
-                <li><a href="#">디저트/스낵</a></li>
-                <li><a href="#">커피/음료</a></li>
-                <li><a href="#">간편식</a></li>
-            </ul>
-            <div class="photo">
-                <img src="../images/header/sub.png" alt="">
-            </div>
-        </div>
-    </div> -->
-    
-    <div class="header bg-blue">
-        <ul class="gnb">
-            <li><a href="#" class="on yellow">파바의 약속</a></li>
-            <li><a href="#">파바 매거진</a></li>
-            <li><a href="#">파바 스토리</a></li>
-            <li id="sub">
-                <a href="#">상품 안내</a>
-                    <div class="sub">
-                        <ul>
-                            <li><a href="#">전체</a></li>
-                            <li><a href="#">브레드</a></li>
-                            <li><a href="#">케이크</a></li>
-                            <li><a href="#">샌드위치/샐러드</a></li>
-                        </ul>
-                        
-                        <ul>
-                            <li><a href="#">선물</a></li>
-                            <li><a href="#">디저트/스낵</a></li>
-                            <li><a href="#">커피/음료</a></li>
-                            <li><a href="#">간편식</a></li>
-                        </ul>
-                        <div class="photo">
-                            <img src="../images/header/sub.png" alt="">
-                        </div>
-                </div>
-            </li>
-            
-        </ul>
+          <ul>
+            <li><a href="#">전체</a></li>
+            <li><a href="../page/detail.html">브레드</a></li>
+            <li><a href="#">케이크</a></li>
+            <li><a href="#">샌드위치/샐러드</a></li>
+          </ul>
 
+          <ul>
+            <li><a href="#">선물</a></li>
+            <li><a href="#">디저트/스낵</a></li>
+            <li><a href="#">커피/음료</a></li>
+            <li><a href="#">간편식</a></li>
+          </ul>
+          <div class="photo">
+            <img src="../images/header/sub.png" alt="" />
+          </div>
+        </div>
+      </li>
+    </ul>
 
-        
-        <div class="logo">
-            <a href="../page/main.html"><h2>PARIS BAGUETTE</h2></a>
-        </div>
-        
-        <div class="side_menu">
-            <ul>
-                <li><a href="../page/info.html">매장 정보</a></li>
-                <li><a href="#">주문 정보</a></li>
-                <li><a href="#">프로모션</a></li>
-                <li><a href="#" id="search"><i class="xi-search"></i></a></li>
-            </ul>
-        </div>
+    <div class="logo">
+      <a href="../page/main.html"><h2>PARIS BAGUETTE</h2></a>
     </div>
+
+    <div class="side_menu">
+      <ul>
+        <li><a href="#">매장 정보</a></li>
+        <li><a href="../page/info.html">주문 정보</a></li>
+        <li><a href="#">프로모션</a></li>
+        <li>
+          <a href="#" id="search"><i class="xi-search"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
 
 <script>
-// Search
-    var search = $('.search')
+  // Search
+  var search = $(".search");
 
-    $('#search').on('click', function(){
-        search.slideDown(100, 'linear', function(){})
-        })
-        $('i').on('click', function(){
-            search.slideUp(100, 'linear', function(){})
-        })
+  $("#search").on("click", function () {
+    search.slideDown(100, "linear", function () {});
+  });
+  $("i").on("click", function () {
+    search.slideUp(100, "linear", function () {});
+  });
 
-    
+  var sub = $("#sub");
+  var item = $(".sub");
 
-    var sub = $('#sub')
-    var item = $('.sub')
+  //   item.hide();
+  //   sub.mousemove(function () {
+  //     sub.find(item).stop().slideDown("fast");
+  //   });
+  //   sub.mouseleave(function () {
+  //     sub.find(item).stop().slideUp("fast");
+  //   });
 
-    item.hide()
-    sub.mousemove(function(){
-        sub.find(item).stop().slideDown('fast')
-    })
-    sub.mouseleave(function(){
-        sub.find(item).stop().slideUp('fast')
-    })
+  sub.mouseenter(function () {
+    $(this).children(".sub").stop().slideDown("fast");
+  });
+  sub.mouseleave(function () {
+    $(this).children(".sub").stop().slideUp("fast");
+  });
 
-
-    // $('#sub').mouseenter(function(){
-    //     $('.sub_wrap').fadeIn('slow', 'linear')
-    // })
-    // $('#sub').mouseleave(function(){
-    //     $('.sub').fadeOut()
-    // })
+  // $('#sub').mouseenter(function(){
+  //     $('.sub_wrap').fadeIn('slow', 'linear')
+  // })
+  // $('#sub').mouseleave(function(){
+  //     $('.sub').fadeOut()
+  // })
 </script>
-
-
